@@ -1,0 +1,280 @@
+[gd_scene format=3 uid="uid://dymptydeiygq1"]
+
+[node name="GUI" type="CanvasLayer"]
+
+[node name="Operands" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="B1" type="Button" parent="Operands"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 446.0
+offset_top = 280.0
+offset_right = 506.0
+offset_bottom = 340.0
+grow_horizontal = 2
+text = "1"
+
+[node name="B2" type="Button" parent="Operands"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 526.0
+offset_top = 280.0
+offset_right = 586.0
+offset_bottom = 340.0
+grow_horizontal = 2
+text = "2"
+
+[node name="B3" type="Button" parent="Operands"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 606.0
+offset_top = 280.0
+offset_right = 666.0
+offset_bottom = 340.0
+grow_horizontal = 2
+text = "3"
+
+[node name="B4" type="Button" parent="Operands"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 446.0
+offset_top = 200.0
+offset_right = 506.0
+offset_bottom = 260.001
+grow_horizontal = 2
+text = "4"
+
+[node name="B5" type="Button" parent="Operands"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 526.0
+offset_top = 200.0
+offset_right = 586.0
+offset_bottom = 260.001
+grow_horizontal = 2
+text = "5"
+
+[node name="B6" type="Button" parent="Operands"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 606.0
+offset_top = 200.0
+offset_right = 666.0
+offset_bottom = 260.001
+grow_horizontal = 2
+text = "6"
+
+[node name="B7" type="Button" parent="Operands"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 446.0
+offset_top = 120.0
+offset_right = 506.0
+offset_bottom = 180.0
+grow_horizontal = 2
+text = "7"
+
+[node name="B8" type="Button" parent="Operands"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 526.0
+offset_top = 120.0
+offset_right = 586.0
+offset_bottom = 180.0
+grow_horizontal = 2
+text = "8"
+
+[node name="B9" type="Button" parent="Operands"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 606.0
+offset_top = 120.0
+offset_right = 666.0
+offset_bottom = 180.0
+grow_horizontal = 2
+text = "9
+"
+
+[node name="Parentheses" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -160.0
+offset_top = 40.0
+offset_right = -120.0
+offset_bottom = 80.0
+
+[node name="OpenCurly" type="Button" parent="Parentheses"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 446.0
+offset_top = 280.0
+offset_right = 506.0
+offset_bottom = 340.0
+grow_horizontal = 2
+text = "{"
+
+[node name="ClosedCurly" type="Button" parent="Parentheses"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 526.0
+offset_top = 280.0
+offset_right = 586.0
+offset_bottom = 340.0
+grow_horizontal = 2
+text = "}"
+
+[node name="OpenSquare" type="Button" parent="Parentheses"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 446.0
+offset_top = 200.0
+offset_right = 506.0
+offset_bottom = 260.001
+grow_horizontal = 2
+text = "["
+
+[node name="ClosedSquare" type="Button" parent="Parentheses"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 526.0
+offset_top = 200.0
+offset_right = 586.0
+offset_bottom = 260.001
+grow_horizontal = 2
+text = "]"
+
+[node name="OpenStandard" type="Button" parent="Parentheses"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 446.0
+offset_top = 120.0
+offset_right = 506.0
+offset_bottom = 180.0
+grow_horizontal = 2
+text = "("
+
+[node name="ClosedStandard" type="Button" parent="Parentheses"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 526.0
+offset_top = 120.0
+offset_right = 586.0
+offset_bottom = 180.0
+grow_horizontal = 2
+text = ")"
+
+[node name="Operators" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 240.0
+offset_top = 40.0
+offset_right = 280.0
+offset_bottom = 80.0
+
+[node name="ClearExpression" type="Button" parent="Operators"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 456.925
+offset_top = 280.0
+offset_right = 576.922
+offset_bottom = 340.0
+grow_horizontal = 2
+text = "{"
+
+[node name="OpenSquare" type="Button" parent="Operators"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 446.0
+offset_top = 200.0
+offset_right = 506.0
+offset_bottom = 260.001
+grow_horizontal = 2
+text = "["
+
+[node name="ClosedSquare" type="Button" parent="Operators"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 526.0
+offset_top = 200.0
+offset_right = 586.0
+offset_bottom = 260.001
+grow_horizontal = 2
+text = "]"
+
+[node name="OpenStandard" type="Button" parent="Operators"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 446.0
+offset_top = 120.0
+offset_right = 506.0
+offset_bottom = 180.0
+grow_horizontal = 2
+text = "("
+
+[node name="ClosedStandard" type="Button" parent="Operators"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 526.0
+offset_top = 120.0
+offset_right = 586.0
+offset_bottom = 180.0
+grow_horizontal = 2
+text = ")"
