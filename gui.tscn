@@ -1,14 +1,24 @@
-[gd_scene format=3 uid="uid://dymptydeiygq1"]
+[gd_scene load_steps=2 format=3 uid="uid://dymptydeiygq1"]
+
+[ext_resource type="Script" path="res://gui.gd" id="1_3od0y"]
 
 [node name="GUI" type="CanvasLayer"]
+script = ExtResource("1_3od0y")
 
-[node name="Operands" type="Control" parent="."]
+[node name="Components" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_top = -107.6
+offset_right = 40.0
+offset_bottom = -67.6
+
+[node name="Operands" type="Control" parent="Components"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="B1" type="Button" parent="Operands"]
+[node name="B1" type="Button" parent="Components/Operands"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 1
 anchors_preset = 5
@@ -21,7 +31,7 @@ offset_bottom = 340.0
 grow_horizontal = 2
 text = "1"
 
-[node name="B2" type="Button" parent="Operands"]
+[node name="B2" type="Button" parent="Components/Operands"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 1
 anchors_preset = 5
@@ -34,7 +44,7 @@ offset_bottom = 340.0
 grow_horizontal = 2
 text = "2"
 
-[node name="B3" type="Button" parent="Operands"]
+[node name="B3" type="Button" parent="Components/Operands"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 1
 anchors_preset = 5
@@ -47,7 +57,7 @@ offset_bottom = 340.0
 grow_horizontal = 2
 text = "3"
 
-[node name="B4" type="Button" parent="Operands"]
+[node name="B4" type="Button" parent="Components/Operands"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 1
 anchors_preset = 5
@@ -60,7 +70,7 @@ offset_bottom = 260.001
 grow_horizontal = 2
 text = "4"
 
-[node name="B5" type="Button" parent="Operands"]
+[node name="B5" type="Button" parent="Components/Operands"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 1
 anchors_preset = 5
@@ -73,7 +83,7 @@ offset_bottom = 260.001
 grow_horizontal = 2
 text = "5"
 
-[node name="B6" type="Button" parent="Operands"]
+[node name="B6" type="Button" parent="Components/Operands"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 1
 anchors_preset = 5
@@ -86,7 +96,7 @@ offset_bottom = 260.001
 grow_horizontal = 2
 text = "6"
 
-[node name="B7" type="Button" parent="Operands"]
+[node name="B7" type="Button" parent="Components/Operands"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 1
 anchors_preset = 5
@@ -99,7 +109,7 @@ offset_bottom = 180.0
 grow_horizontal = 2
 text = "7"
 
-[node name="B8" type="Button" parent="Operands"]
+[node name="B8" type="Button" parent="Components/Operands"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 1
 anchors_preset = 5
@@ -112,7 +122,7 @@ offset_bottom = 180.0
 grow_horizontal = 2
 text = "8"
 
-[node name="B9" type="Button" parent="Operands"]
+[node name="B9" type="Button" parent="Components/Operands"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 1
 anchors_preset = 5
@@ -126,7 +136,7 @@ grow_horizontal = 2
 text = "9
 "
 
-[node name="Parentheses" type="Control" parent="."]
+[node name="Parentheses" type="Control" parent="Components"]
 layout_mode = 3
 anchors_preset = 0
 offset_left = -160.0
@@ -134,7 +144,7 @@ offset_top = 40.0
 offset_right = -120.0
 offset_bottom = 80.0
 
-[node name="OpenCurly" type="Button" parent="Parentheses"]
+[node name="OpenCurly" type="Button" parent="Components/Parentheses"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 2
 anchor_left = 0.5
@@ -146,7 +156,7 @@ offset_bottom = 340.0
 grow_horizontal = 2
 text = "{"
 
-[node name="ClosedCurly" type="Button" parent="Parentheses"]
+[node name="ClosedCurly" type="Button" parent="Components/Parentheses"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 2
 anchor_left = 0.5
@@ -158,7 +168,7 @@ offset_bottom = 340.0
 grow_horizontal = 2
 text = "}"
 
-[node name="OpenSquare" type="Button" parent="Parentheses"]
+[node name="OpenSquare" type="Button" parent="Components/Parentheses"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 2
 anchor_left = 0.5
@@ -170,7 +180,7 @@ offset_bottom = 260.001
 grow_horizontal = 2
 text = "["
 
-[node name="ClosedSquare" type="Button" parent="Parentheses"]
+[node name="ClosedSquare" type="Button" parent="Components/Parentheses"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 2
 anchor_left = 0.5
@@ -182,7 +192,7 @@ offset_bottom = 260.001
 grow_horizontal = 2
 text = "]"
 
-[node name="OpenStandard" type="Button" parent="Parentheses"]
+[node name="OpenStandard" type="Button" parent="Components/Parentheses"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 2
 anchor_left = 0.5
@@ -194,7 +204,7 @@ offset_bottom = 180.0
 grow_horizontal = 2
 text = "("
 
-[node name="ClosedStandard" type="Button" parent="Parentheses"]
+[node name="ClosedStandard" type="Button" parent="Components/Parentheses"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 2
 anchor_left = 0.5
@@ -206,7 +216,7 @@ offset_bottom = 180.0
 grow_horizontal = 2
 text = ")"
 
-[node name="Operators" type="Control" parent="."]
+[node name="Operators" type="Control" parent="Components"]
 layout_mode = 3
 anchors_preset = 0
 offset_left = 240.0
@@ -214,7 +224,7 @@ offset_top = 40.0
 offset_right = 280.0
 offset_bottom = 80.0
 
-[node name="OpenSquare" type="Button" parent="Operators"]
+[node name="OpenSquare" type="Button" parent="Components/Operators"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 1
 anchors_preset = 5
@@ -227,7 +237,7 @@ offset_bottom = 260.001
 grow_horizontal = 2
 text = "×"
 
-[node name="ClosedSquare" type="Button" parent="Operators"]
+[node name="ClosedSquare" type="Button" parent="Components/Operators"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 1
 anchors_preset = 5
@@ -241,7 +251,7 @@ grow_horizontal = 2
 theme_override_font_sizes/font_size = 21
 text = "÷"
 
-[node name="OpenStandard" type="Button" parent="Operators"]
+[node name="OpenStandard" type="Button" parent="Components/Operators"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 1
 anchors_preset = 5
@@ -254,7 +264,7 @@ offset_bottom = 180.0
 grow_horizontal = 2
 text = "+"
 
-[node name="ClosedStandard" type="Button" parent="Operators"]
+[node name="ClosedStandard" type="Button" parent="Components/Operators"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 1
 anchors_preset = 5
@@ -268,13 +278,13 @@ grow_horizontal = 2
 theme_override_font_sizes/font_size = 22
 text = "-"
 
-[node name="Operations" type="Control" parent="."]
+[node name="Operations" type="Control" parent="Components"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="ClearExpression" type="Button" parent="Operations"]
+[node name="ClearExpression" type="Button" parent="Components/Operations"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 1
 anchors_preset = 5
@@ -287,7 +297,7 @@ offset_bottom = 380.0
 grow_horizontal = 2
 text = "CLEAR"
 
-[node name="CheckIfBalanced" type="Button" parent="Operations"]
+[node name="CheckIfBalanced" type="Button" parent="Components/Operations"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 1
 anchors_preset = 5
@@ -300,7 +310,7 @@ offset_bottom = 420.0
 grow_horizontal = 2
 text = "CHECK IF BALANCED"
 
-[node name="Evaluate" type="Button" parent="Operations"]
+[node name="Evaluate" type="Button" parent="Components/Operations"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 1
 anchors_preset = 5
@@ -313,7 +323,7 @@ offset_bottom = 580.0
 grow_horizontal = 2
 text = "EVALUATE"
 
-[node name="ConvertToPostfix" type="Button" parent="Operations"]
+[node name="ConvertToPostfix" type="Button" parent="Components/Operations"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 1
 anchors_preset = 5
@@ -326,7 +336,7 @@ offset_bottom = 500.0
 grow_horizontal = 2
 text = "CONVERT TO POSTFIX"
 
-[node name="ConvertToPrefix" type="Button" parent="Operations"]
+[node name="ConvertToPrefix" type="Button" parent="Components/Operations"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 1
 anchors_preset = 5
@@ -338,3 +348,55 @@ offset_right = 526.0
 offset_bottom = 500.0
 grow_horizontal = 2
 text = "CONVERT TO PREFIX"
+
+[node name="Label" type="Label" parent="."]
+custom_minimum_size = Vector2(500, 50)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -250.0
+offset_top = -57.97
+offset_right = 250.0
+offset_bottom = -7.96997
+grow_horizontal = 2
+grow_vertical = 0
+text = "Test text"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="ColorRect" type="ColorRect" parent="Label"]
+z_index = -1
+custom_minimum_size = Vector2(500, 50)
+layout_mode = 0
+offset_right = 500.0
+offset_bottom = 50.0
+color = Color(0.403922, 0.403922, 0.403922, 1)
+
+[node name="Label2" type="Label" parent="."]
+custom_minimum_size = Vector2(500, 50)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -250.0
+offset_top = -124.48
+offset_right = 250.0
+offset_bottom = -74.48
+grow_horizontal = 2
+grow_vertical = 0
+text = "Test text"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="ColorRect" type="ColorRect" parent="Label2"]
+z_index = -1
+custom_minimum_size = Vector2(500, 50)
+layout_mode = 0
+offset_right = 500.0
+offset_bottom = 50.0
+color = Color(0.403922, 0.403922, 0.403922, 1)

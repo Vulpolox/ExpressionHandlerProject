@@ -1,10 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://dlmpyj786srdy"]
+[gd_scene load_steps=3 format=3 uid="uid://b17yioruygf46"]
 
-[ext_resource type="Script" path="res://stack.gd" id="1_xeapv"]
 [ext_resource type="Script" path="res://Scripts/Stack.gd" id="2_6p526"]
 
+[sub_resource type="GDScript" id="GDScript_1gqs5"]
+
 [node name="Stack" type="Node"]
-script = ExtResource("1_xeapv")
+script = SubResource("GDScript_1gqs5")
 
 [node name="StackDefinition" type="Node" parent="."]
 script = ExtResource("2_6p526")
