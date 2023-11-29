@@ -65,10 +65,28 @@ func add_token(toAdd: String) -> void:
 # post -- prints each expression type for debugging purposes
 func print_expressions() -> void:
 	pass
-		
 	
-	
+# pre  -- takes a String argument, operator
+# post -- returns an integer representing the operator's precedence
+func get_precedence(operator: String) -> int:
+	return -1
 
-	
+# pre  -- takes no arguments
+# post -- returns the infix expression as a string
+func get_infix() -> String:
+	return ""
 
+# pre  -- takes no arguments
+# post -- returns the postfix expression as a string
+func get_postfix() -> String:
+	return ""
+
+# pre  -- takes no arguments
+# post -- returns the prefix expression as a string
+func get_prefix() -> String:
+	return ""
 	
+# pre  -- takes no arguments
+# post -- returns the evaluated expression
+func get_evaluation() -> float:
+	return 0.0

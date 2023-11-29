@@ -25,3 +25,7 @@ func top() -> Variant:
 		return null
 	else:
 		return self.data[-1]
+		
+		
+func get_size() -> int:
+	return data.size()

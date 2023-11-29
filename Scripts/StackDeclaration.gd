@@ -28,3 +28,8 @@ func empty() -> bool:
 # post -- returns the top element from the stack
 func top() -> Variant:
 	return null
+	
+# pre  -- takes no arguments
+# post -- returns size of stack
+func get_size() -> int:
+	return -1
