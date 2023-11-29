@@ -214,19 +214,6 @@ offset_top = 40.0
 offset_right = 280.0
 offset_bottom = 80.0
 
-[node name="ClearExpression" type="Button" parent="Operators"]
-custom_minimum_size = Vector2(60, 60)
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = 456.925
-offset_top = 280.0
-offset_right = 576.922
-offset_bottom = 340.0
-grow_horizontal = 2
-text = "{"
-
 [node name="OpenSquare" type="Button" parent="Operators"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 1
@@ -238,7 +225,7 @@ offset_top = 200.0
 offset_right = 506.0
 offset_bottom = 260.001
 grow_horizontal = 2
-text = "["
+text = "×"
 
 [node name="ClosedSquare" type="Button" parent="Operators"]
 custom_minimum_size = Vector2(60, 60)
@@ -251,7 +238,8 @@ offset_top = 200.0
 offset_right = 586.0
 offset_bottom = 260.001
 grow_horizontal = 2
-text = "]"
+theme_override_font_sizes/font_size = 21
+text = "÷"
 
 [node name="OpenStandard" type="Button" parent="Operators"]
 custom_minimum_size = Vector2(60, 60)
@@ -264,7 +252,7 @@ offset_top = 120.0
 offset_right = 506.0
 offset_bottom = 180.0
 grow_horizontal = 2
-text = "("
+text = "+"
 
 [node name="ClosedStandard" type="Button" parent="Operators"]
 custom_minimum_size = Vector2(60, 60)
@@ -277,4 +265,76 @@ offset_top = 120.0
 offset_right = 586.0
 offset_bottom = 180.0
 grow_horizontal = 2
-text = ")"
+theme_override_font_sizes/font_size = 22
+text = "-"
+
+[node name="Operations" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ClearExpression" type="Button" parent="Operations"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 696.925
+offset_top = 320.0
+offset_right = 816.922
+offset_bottom = 380.0
+grow_horizontal = 2
+text = "CLEAR"
+
+[node name="CheckIfBalanced" type="Button" parent="Operations"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 464.91
+offset_top = 360.0
+offset_right = 644.909
+offset_bottom = 420.0
+grow_horizontal = 2
+text = "CHECK IF BALANCED"
+
+[node name="Evaluate" type="Button" parent="Operations"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 464.91
+offset_top = 520.0
+offset_right = 644.909
+offset_bottom = 580.0
+grow_horizontal = 2
+text = "EVALUATE"
+
+[node name="ConvertToPostfix" type="Button" parent="Operations"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 584.0
+offset_top = 440.0
+offset_right = 763.999
+offset_bottom = 500.0
+grow_horizontal = 2
+text = "CONVERT TO POSTFIX"
+
+[node name="ConvertToPrefix" type="Button" parent="Operations"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 346.0
+offset_top = 440.0
+offset_right = 526.0
+offset_bottom = 500.0
+grow_horizontal = 2
+text = "CONVERT TO PREFIX"

@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://dlmpyj786srdy"]
+[gd_scene load_steps=3 format=3 uid="uid://dlmpyj786srdy"]
+
+[ext_resource type="Script" path="res://stack.gd" id="1_xeapv"]
+[ext_resource type="Script" path="res://Scripts/StackDefinition.gd" id="2_hsghg"]
 
 [node name="Stack" type="Node"]
+script = ExtResource("1_xeapv")
+
+[node name="StackDefinition" type="Node" parent="."]
+script = ExtResource("2_hsghg")
