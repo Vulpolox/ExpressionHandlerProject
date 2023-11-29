@@ -17,10 +17,12 @@ func _ready():
 	eo.add_token("8")
 	eo.add_token("]")
 	
+	
 	eo.get_postfix_expression()
+	eo.get_prefix_expression()
 	eo.evaluate_expression()
 	
 	eo.print_expressions()
 	
-	print(eo.get_evaluation())
+
 	

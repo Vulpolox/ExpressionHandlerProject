@@ -51,6 +51,7 @@ func clear_expression() -> void:
 	self.prefix_expression = []
 	self.evaluation = NAN
 
+
 func evaluate_expression() -> void:
 	
 	var operand_stack = Stack.new()
@@ -137,12 +138,75 @@ func get_postfix_expression() -> void:
 	while not operator_stack.empty():
 		self.postfix_expression.append(operator_stack.top())
 		operator_stack.pop()
-		
 
 
 func get_prefix_expression() -> void:
-	pass
+	
+	self.prefix_expression = []
+	
+	# if the input expression is unbalanced
+	if not self.is_balanced():
+		self.prefix_expression.append("Cannot convert; expression is unbalanced")
+		return
 
+	var temp_expression = self.current_expression.duplicate()
+	var adjusted_postfix = []
+	
+	temp_expression.reverse() # reverse order of infix expression
+	
+	# flip direction of all parentheses in flipped infix expression
+	for i in range(temp_expression.size()):
+		temp_expression[i] = self.flip_parentheses(temp_expression[i])
+	
+	## convert expression to postfix ##
+	###################################
+	
+	
+	var operator_stack = Stack.new()
+	var matching_left_parenthesis
+	
+	# iterate through each token in the infix expression
+	for token in temp_expression:
+		
+		# if the token is an operand
+		if token.is_valid_int():
+			adjusted_postfix.append(token) # push it to output
+		
+		# if token is an open parenthesis
+		elif token in self.open_parentheses:
+			operator_stack.push(token) # push it onto stack
+		
+		# if token is a closed parenthesis
+		elif token in self.closed_parentheses:
+		
+			matching_left_parenthesis = self.open_parentheses[self.closed_parentheses.find(token)]
+			
+			# while top element in the stack isn't the matching left parenthesis
+			while operator_stack.top() != matching_left_parenthesis and not operator_stack.empty():
+				
+				adjusted_postfix.append(operator_stack.top()) # add operators to output until opening par
+				operator_stack.pop() # remove operator from stack
+			operator_stack.pop() # remove left parenthesis from stack
+		
+		# if token is an operator
+		elif token in self.valid_operators:
+			
+			# while stack is not empty and token precedence <= top stack precedence
+			while not operator_stack.empty() and self.get_precedence(token) <= self.get_precedence(operator_stack.top()):
+				
+				adjusted_postfix.append(operator_stack.top()) # add operator from stack
+				operator_stack.pop() # remove operator from stack
+			operator_stack.push(token) # add the current token to the operator stack
+		
+	# add remaining operators in stack to expression
+	while not operator_stack.empty():
+		adjusted_postfix.append(operator_stack.top())
+		operator_stack.pop()
+		
+	# flip order of this adjusted postfix expression; it is now prefix
+	adjusted_postfix.reverse()
+	self.prefix_expression = adjusted_postfix
+	
 
 func add_token(toAdd: String) -> void:
 	
@@ -157,7 +221,8 @@ func print_expressions() -> void:
 	print("   " + self.get_postfix())
 	print("Prefix Expression:")
 	print("   " + self.get_prefix())
-	
+
+
 func get_precedence(operator: String) -> int:
 	
 	if operator == "*" or operator == "/":
@@ -166,8 +231,16 @@ func get_precedence(operator: String) -> int:
 		return 1
 	else:
 		return 0
+
+func flip_parentheses(parenthesis: String) -> String:
 	
-	
+	if parenthesis in self.open_parentheses:
+		return self.closed_parentheses[self.open_parentheses.find(parenthesis)]
+	elif parenthesis in self.closed_parentheses:
+		return self.open_parentheses[self.closed_parentheses.find(parenthesis)]
+	else:
+		return parenthesis # input was not a parenthesis
+
 func get_infix() -> String:
 	var out = ""
 	for element in self.current_expression:
@@ -187,7 +260,7 @@ func get_prefix() -> String:
 	for element in self.prefix_expression:
 		out += (element + " ")
 	return out
-	
+
 
 func get_evaluation() -> float:
 	return self.evaluation

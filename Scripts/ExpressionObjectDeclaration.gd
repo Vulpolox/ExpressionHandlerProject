@@ -71,6 +71,11 @@ func print_expressions() -> void:
 func get_precedence(operator: String) -> int:
 	return -1
 
+# pre  -- takes a string
+# post -- if the string is a parenthesis, returns the corresponding flipped parenthesis, else returns input
+func flip_parentheses(parenthesis: String) -> String:
+	return ""
+
 # pre  -- takes no arguments
 # post -- returns the infix expression as a string
 func get_infix() -> String:
