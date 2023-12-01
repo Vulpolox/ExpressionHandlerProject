@@ -85,7 +85,7 @@ func evaluate_expression() -> void:
 				self.evaluation = NAN
 				return
 	
-	self.evaluation = float(operand_stack.top())
+	self.evaluation = snapped(float(operand_stack.top()), .001) # snapped function rounds
 
 
 func get_postfix_expression() -> void:
@@ -208,9 +208,12 @@ func get_prefix_expression() -> void:
 	self.prefix_expression = adjusted_postfix
 	
 
-func add_token(toAdd: String) -> void:
-	
-	self.current_expression.append(toAdd)
+func add_token(to_add: String) -> void:
+	self.current_expression.append(to_add)
+
+
+func set_current_expression(expression_to_set: Array) -> void:
+	self.current_expression = expression_to_set
 
 
 func print_expressions() -> void:
@@ -232,6 +235,7 @@ func get_precedence(operator: String) -> int:
 	else:
 		return 0
 
+
 func flip_parentheses(parenthesis: String) -> String:
 	
 	if parenthesis in self.open_parentheses:
@@ -240,6 +244,7 @@ func flip_parentheses(parenthesis: String) -> String:
 		return self.open_parentheses[self.closed_parentheses.find(parenthesis)]
 	else:
 		return parenthesis # input was not a parenthesis
+
 
 func get_infix() -> String:
 	var out = ""
@@ -264,3 +269,7 @@ func get_prefix() -> String:
 
 func get_evaluation() -> float:
 	return self.evaluation
+	
+
+func is_valid_expression(input: Array) -> bool:
+	return false # might do if I have time

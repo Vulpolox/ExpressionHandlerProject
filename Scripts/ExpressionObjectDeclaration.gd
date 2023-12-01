@@ -58,7 +58,12 @@ func get_prefix_expression() -> void:
 
 # pre  -- takes a String as an argument, token
 # post -- pushes token to the back of current_expression
-func add_token(toAdd: String) -> void:
+func add_token(to_add: String) -> void:
+	pass
+
+# pre  -- takes an array as an argument, expression_to_set
+# post -- assigns input array to current_expression
+func set_current_expression(expression_to_set: Array) -> void:
 	pass
 
 # pre  -- takes no arguments
@@ -95,3 +100,8 @@ func get_prefix() -> String:
 # post -- returns the evaluated expression
 func get_evaluation() -> float:
 	return 0.0
+	
+# pre  -- takes an array of tokens representing an expression
+# post -- returns true if the expression is valid, false otherwise
+func is_valid_expression(input: Array) -> bool:
+	return false
