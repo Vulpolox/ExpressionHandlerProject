@@ -192,7 +192,7 @@ func get_prefix_expression() -> void:
 		elif token in self.valid_operators:
 			
 			# while stack is not empty and token precedence <= top stack precedence
-			while not operator_stack.empty() and self.get_precedence(token) <= self.get_precedence(operator_stack.top()):
+			while not operator_stack.empty() and self.get_precedence(token) < self.get_precedence(operator_stack.top()):
 				
 				adjusted_postfix.append(operator_stack.top()) # add operator from stack
 				operator_stack.pop() # remove operator from stack

@@ -1,3 +1,17 @@
-[gd_scene format=3 uid="uid://tdjgqsn1fd5e"]
+[gd_scene load_steps=2 format=3 uid="uid://tdjgqsn1fd5e"]
+
+[ext_resource type="PackedScene" uid="uid://dymptydeiygq1" path="res://gui.tscn" id="1_yxx82"]
 
 [node name="Main" type="Node2D"]
+
+[node name="GUI" parent="." instance=ExtResource("1_yxx82")]
+
+[node name="ColorRect" type="ColorRect" parent="GUI"]
+z_index = -4
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.176471, 0.192157, 0.309804, 1)
