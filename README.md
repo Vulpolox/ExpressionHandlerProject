@@ -10,10 +10,15 @@
  ## File / Code Shortcuts
 
  [StackDeclaration.gd](https://github.com/Vulpolox/ExpressionHandlerProject/blob/main/Scripts/StackDeclaration.gd)
+ 
  [Stack.gd](https://github.com/Vulpolox/ExpressionHandlerProject/blob/main/Scripts/Stack.gd)
+ 
  [ExpressionObjectDeclaration.gd](https://github.com/Vulpolox/ExpressionHandlerProject/blob/main/Scripts/ExpressionObjectDeclaration.gd)
+ 
  [ExpressionObject.gd](https://github.com/Vulpolox/ExpressionHandlerProject/blob/main/Scripts/ExpressionObject.gd)
+ 
  [Code for Button Functionality](https://github.com/Vulpolox/ExpressionHandlerProject/blob/main/gui.gd)
+ 
 
 # Instructions on How to Run Code
 
