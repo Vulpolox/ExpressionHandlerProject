@@ -32,7 +32,7 @@
 
  ### Entering Expression
 
- Click on the number and parenthesis buttons to enter expression
+ Click on the operator, operand, and parenthesis buttons to enter expression
 
  ![Entering Expression](https://github.com/Vulpolox/ExpressionHandlerProject/blob/main/Screenshots/EnterExpression.png)
 
