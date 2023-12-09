@@ -7,6 +7,14 @@
 
  A simple expression handler app made using the Godot game engine that can read expressions from user input and can check whether they're balanced, can convert them to prefix and postfix, and can evaluate them
 
+ ## File / Code Shortcuts
+
+ [StackDeclaration.gd](https://github.com/Vulpolox/ExpressionHandlerProject/blob/main/Scripts/StackDeclaration.gd)
+ [Stack.gd](https://github.com/Vulpolox/ExpressionHandlerProject/blob/main/Scripts/Stack.gd)
+ [ExpressionObjectDeclaration.gd](https://github.com/Vulpolox/ExpressionHandlerProject/blob/main/Scripts/ExpressionObjectDeclaration.gd)
+ [ExpressionObject.gd](https://github.com/Vulpolox/ExpressionHandlerProject/blob/main/Scripts/ExpressionObject.gd)
+ [Code for Button Functionality](https://github.com/Vulpolox/ExpressionHandlerProject/blob/main/gui.gd)
+
 # Instructions on How to Run Code
 
  ## Run online [here](https://vulpolox.itch.io/compsci-303-class-project) or download executable [here](https://drive.google.com/file/d/1WHmh31ui1EIswot5-3Jpv3qk035LHQob/view?usp=sharing)
