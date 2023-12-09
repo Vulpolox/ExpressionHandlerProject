@@ -9,7 +9,9 @@
 
 # Instructions on How to Run Code
 
- ## Run online [here](https://vulpolox.itch.io/compsci-303-class-project) or download executable [here](https://drive.google.com/file/d/1WHmh31ui1EIswot5-3Jpv3qk035LHQob/view?usp=sharing) (both only work on Windows)
+ ## Run online [here](https://vulpolox.itch.io/compsci-303-class-project) or download executable [here](https://drive.google.com/file/d/1WHmh31ui1EIswot5-3Jpv3qk035LHQob/view?usp=sharing)
+
+ note: both of these only work on Windows
 
  ### GUI Overview
 
