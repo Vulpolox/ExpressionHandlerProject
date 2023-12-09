@@ -1,5 +1,5 @@
 
-# ExpressionHandlerProject
+# Expression Handler Project
 
  ## CompSci303 Extra Curricular || Jack Keys
 
