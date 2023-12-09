@@ -38,7 +38,7 @@
 
  ### Checking if Expression is Balanced
 
- Click on the "CHECK IF BALANCED BUTTON" to see if expression is balanced
+ Click on the "CHECK IF BALANCED BUTTON" to see if entered expression is balanced
 
  ![Check if Expression Is Balanced](https://github.com/Vulpolox/ExpressionHandlerProject/blob/main/Screenshots/CheckIfBalanced.png)
  
