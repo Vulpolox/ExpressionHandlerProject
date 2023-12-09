@@ -17,21 +17,30 @@
 
  ### Entering Expression
 
+ Click on the number and parenthesis buttons to enter expression
+
  ![Entering Expression](https://github.com/Vulpolox/ExpressionHandlerProject/blob/main/Screenshots/EnterExpression.png)
 
  ### Checking if Expression is Balanced
+
+ Click on the "CHECK IF BALANCED BUTTON" to see if expression is balanced
 
  ![Check if Expression Is Balanced](https://github.com/Vulpolox/ExpressionHandlerProject/blob/main/Screenshots/CheckIfBalanced.png)
  
  ### Converting to Prefix
 
+ Click on the "CONVERT TO PREFIX" button to convert entered expression to prefix
+
  ![Converting to Prefix](https://github.com/Vulpolox/ExpressionHandlerProject/blob/main/Screenshots/Prefix.png)
 
  ### Converting to Postfix
 
+ Click on the "CONVERT TO POSTFIX" button to convert entered expression to postfix
+
  ![Converting to Postfix](https://github.com/Vulpolox/ExpressionHandlerProject/blob/main/Screenshots/Postfix.png)
 
  ### Evaluating Expression
+ Click on the "EVALUATE" button to evaluate entered expression
 
  ![Evaluating Expression](https://github.com/Vulpolox/ExpressionHandlerProject/blob/main/Screenshots/Evaluate.png)
 
